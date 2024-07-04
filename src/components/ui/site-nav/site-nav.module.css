@@ -26,3 +26,14 @@
 .inactiveLink {
 	color: #fff;
 }
+
+@media (max-width: 450px) {
+	.wrapper {
+		justify-content: center;
+	}
+
+	.activeLink,
+	.inactiveLink {
+		font-size: 1em;
+	}
+}
