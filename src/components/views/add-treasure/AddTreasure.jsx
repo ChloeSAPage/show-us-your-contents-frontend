@@ -64,14 +64,19 @@ const AddTreasure = () => {
             required
           />
         </label>
-        <select onChange={selectedInput} required>
-          <option></option>
-          {bags.map((bag) => (
-            <option key={bag.id} value={bag.id}>
-              {bag.bag_name}
+        <label className={styles.inputContainer}>
+          <p>Select your bag</p>
+          <select onChange={selectedInput} required className={styles.input}>
+            <option placeholder="Select bag" disabled selected>
+              Select bag
             </option>
-          ))}
-        </select>
+            {bags.map((bag) => (
+              <option key={bag.id} value={bag.id}>
+                {bag.bag_name}
+              </option>
+            ))}
+          </select>
+        </label>
         <div className={styles.inputContainer}>
           <button className={styles.treasurebutton} type="submit">
             Add Treasure
