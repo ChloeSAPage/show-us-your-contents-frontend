@@ -1,41 +1,49 @@
 .wrapper {
-  background: #fff;
-  width: 100%;
-  padding: 1rem;
+	background: #fff;
+	width: 100%;
+	padding: 1rem;
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
 }
 
 .item {
-  list-style: none;
-  flex-basis: 50%;
+	list-style: none;
+	flex-basis: 50%;
 }
 
 @media (min-width: 600px) {
-  .item {
-    flex-basis: 33.33%;
-  }
+	.item {
+		flex-basis: 33.33%;
+	}
 }
 
 .link {
-  display: block;
-  padding: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  color: rgb(40, 40, 40);
+	display: block;
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	transition: box-shadow 0.2s ease, transform 0.1s ease;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(40, 40, 40);
 }
 
 .link:hover {
-  background-color: rgba(149, 221, 241, 0.644);
+	background-color: rgba(149, 221, 241, 0.644);
+}
+
+.link:active {
+	box-shadow: rgba(60, 64, 67, 0.3) 0px -1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px -1px 3px 1px;
+	transform: translateY(2px);
 }
