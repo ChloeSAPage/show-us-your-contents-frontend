@@ -13,8 +13,7 @@ function Home() {
   return (
     <div className={styles.wrapper}>
       <h2>Welcome to a website of stuff</h2>
-      <p>We REALLY like stuff.</p>
-      <p>We're REALLY proud of our stuff.</p>
+      <p>We REALLY like stuff. We're REALLY proud of our stuff.</p>
       <p>We think you should be too!</p>
       <h3>How this works</h3>
       <ul>
