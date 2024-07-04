@@ -12,7 +12,26 @@ function Home() {
 
   return (
     <div className={styles.wrapper}>
-      <p>Welcome to the things</p>
+      <h2>Welcome to a website of stuff</h2>
+      <p>We REALLY like stuff.</p>
+      <p>We're REALLY proud of our stuff.</p>
+      <p>We think you should be too!</p>
+      <h3>How this works</h3>
+      <ul>
+        <li>
+          <strong>Make an account/sign in:</strong> You can only view some stuff
+          from here. Join our adventurer's guild to get crazy with your stuff.{" "}
+        </li>
+        <li>
+          <strong>Add your receptical:</strong> What do you want to fill? Bag?
+          Bucket? Your mother's basement? We don't care.
+        </li>
+        <li>
+          <strong>Add your treasure:</strong> Gold? lemonade? Lovely bit of
+          string? Pocket lint? One man's tat is another's treasure right...{" "}
+        </li>
+      </ul>
+      <h4>Go nuts. Have fun. We did.</h4>
     </div>
   );
 }
