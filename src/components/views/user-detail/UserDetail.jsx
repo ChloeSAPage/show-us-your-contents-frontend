@@ -61,7 +61,7 @@ const UserDetail = () => {
                 <p>
                     <strong>Treasures:</strong>
                 </p>
-                <div>This user has no things</div>
+                <div>This user is slacking :(</div>
             </div>
         );
     }
