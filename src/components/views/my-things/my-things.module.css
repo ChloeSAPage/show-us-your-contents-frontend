@@ -26,15 +26,25 @@
 
 .itemContent {
 	display: block;
-	padding: 10px;
+	padding: 10px 20px 20px 20px;
 	margin-right: 10px;
 	margin-bottom: 10px;
-	border: 1px solid #ccc;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 	border-radius: 10px;
 	text-align: center;
 }
 
 .link {
-	margin: 0 5px;
+	margin: 10px;
+	padding: 5px 10px;
 	color: #333;
+	border-radius: 5px;
+	box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.1) 0px 1px 3px 1px;
+}
+
+.link:hover {
+	color: #000;
+	background-color: rgba(149, 221, 241, 0.644);
 }
