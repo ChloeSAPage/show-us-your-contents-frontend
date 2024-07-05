@@ -16,8 +16,6 @@ const UserDetail = () => {
     const thingsStatus = useSelector((state) => state.things.userThingsStatus);
     const thingsError = useSelector((state) => state.things.userThingsError);
 
-    console.log(things)
-
     useEffect(() => {
         dispatch(fetchUser(id));
     }, [dispatch, id]);
@@ -25,7 +23,6 @@ const UserDetail = () => {
     useEffect(() => {
         dispatch(fetchThingsByUser(id));
     }, [dispatch, id]);
-    console.log(`id ${id}`)
     useEffect(() => {
         dispatch(
             setBreadcrumb([
@@ -52,6 +49,23 @@ const UserDetail = () => {
         return <div>User not found</div>;
     }
 
+    if (things.length < 1 || things == undefined) {
+        return (
+            <div className={styles.wrapper}>
+                <p>
+                    <strong>Name:</strong> <em>{user.username}</em>
+                </p>
+                <p>
+                    <strong>Bio:</strong> <em>{user.bio}</em>
+                </p>
+                <p>
+                    <strong>Treasures:</strong>
+                </p>
+                <div>This user is slacking :(</div>
+            </div>
+        );
+    }
+
     return (
         <div className={styles.wrapper}>
             <p>
@@ -67,8 +81,12 @@ const UserDetail = () => {
                 {things.map((thing) => (
                     <li className={styles.link} key={thing.id}>
                         <div className={styles.itemContent}>
-                            <p><strong>Treasure:</strong> {thing.treasure_name}</p>
-                            <p><strong>Bag:</strong> {thing.bag_name}</p>
+                            <p>
+                                <strong>Treasure:</strong> {thing.treasure_name}
+                            </p>
+                            <p>
+                                <strong>Bag:</strong> {thing.bag_name}
+                            </p>
                         </div>
                     </li>
                 ))}
