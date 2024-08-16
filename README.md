@@ -1,6 +1,6 @@
-# Project 3 - example front-end
+# Project 3 front-end
 
-This is an example front-end application for project 3.
+This is the front-end application for project 3.
 
 It allows users to register, log in, and manage their collections of things.
 
